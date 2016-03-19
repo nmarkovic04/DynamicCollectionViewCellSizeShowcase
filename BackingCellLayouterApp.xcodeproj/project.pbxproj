@@ -12,6 +12,9 @@
 		F67183311C9AB3E900E7E361 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F671832F1C9AB3E900E7E361 /* Main.storyboard */; };
 		F67183331C9AB3E900E7E361 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F67183321C9AB3E900E7E361 /* Assets.xcassets */; };
 		F67183361C9AB3E900E7E361 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F67183341C9AB3E900E7E361 /* LaunchScreen.storyboard */; };
+		F671833E1C9AB41100E7E361 /* BackingCellLayouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F671833D1C9AB41100E7E361 /* BackingCellLayouter.swift */; };
+		F67183411C9AB45F00E7E361 /* DynamicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F671833F1C9AB45F00E7E361 /* DynamicCell.swift */; };
+		F67183421C9AB45F00E7E361 /* DynamicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F67183401C9AB45F00E7E361 /* DynamicCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		F67183321C9AB3E900E7E361 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F67183351C9AB3E900E7E361 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F67183371C9AB3E900E7E361 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F671833D1C9AB41100E7E361 /* BackingCellLayouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackingCellLayouter.swift; sourceTree = "<group>"; };
+		F671833F1C9AB45F00E7E361 /* DynamicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicCell.swift; sourceTree = "<group>"; };
+		F67183401C9AB45F00E7E361 /* DynamicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,33 @@
 		F671832A1C9AB3E900E7E361 /* BackingCellLayouterApp */ = {
 			isa = PBXGroup;
 			children = (
+				F67183441C9AB49A00E7E361 /* UI */,
+				F67183431C9AB49400E7E361 /* Layouter */,
 				F671832B1C9AB3E900E7E361 /* AppDelegate.swift */,
 				F671832D1C9AB3E900E7E361 /* ViewController.swift */,
-				F671832F1C9AB3E900E7E361 /* Main.storyboard */,
 				F67183321C9AB3E900E7E361 /* Assets.xcassets */,
-				F67183341C9AB3E900E7E361 /* LaunchScreen.storyboard */,
 				F67183371C9AB3E900E7E361 /* Info.plist */,
 			);
 			path = BackingCellLayouterApp;
+			sourceTree = "<group>";
+		};
+		F67183431C9AB49400E7E361 /* Layouter */ = {
+			isa = PBXGroup;
+			children = (
+				F671833D1C9AB41100E7E361 /* BackingCellLayouter.swift */,
+			);
+			name = Layouter;
+			sourceTree = "<group>";
+		};
+		F67183441C9AB49A00E7E361 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F671832F1C9AB3E900E7E361 /* Main.storyboard */,
+				F67183341C9AB3E900E7E361 /* LaunchScreen.storyboard */,
+				F671833F1C9AB45F00E7E361 /* DynamicCell.swift */,
+				F67183401C9AB45F00E7E361 /* DynamicCell.xib */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F67183361C9AB3E900E7E361 /* LaunchScreen.storyboard in Resources */,
+				F67183421C9AB45F00E7E361 /* DynamicCell.xib in Resources */,
 				F67183331C9AB3E900E7E361 /* Assets.xcassets in Resources */,
 				F67183311C9AB3E900E7E361 /* Main.storyboard in Resources */,
 			);
@@ -136,7 +162,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F671832E1C9AB3E900E7E361 /* ViewController.swift in Sources */,
+				F67183411C9AB45F00E7E361 /* DynamicCell.swift in Sources */,
 				F671832C1C9AB3E900E7E361 /* AppDelegate.swift in Sources */,
+				F671833E1C9AB41100E7E361 /* BackingCellLayouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
